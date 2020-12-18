@@ -9,10 +9,10 @@ class LatestCommitComponent extends React.Component {
     super(props);
     this.state = {
       author: "",
-      //branch: "",
+      branch: "",
       date: "",
-      //sha: "",
-      //link: "",
+      sha: "",
+      link: "",
       error: null
     };
   }
@@ -29,10 +29,10 @@ class LatestCommitComponent extends React.Component {
           if (json.commit) {
             this.setState({
               author: json.commit.author.login,
-              //branch: json.name,
+              branch: json.name,
               date: json.commit.commit.author.date,
-              //sha: json.commit.sha,
-              //link: json._links.html
+              sha: json.commit.sha,
+              link: json._links.html
             });
           } else {
             this.setState({
@@ -55,10 +55,10 @@ class LatestCommitComponent extends React.Component {
     ) : (
       <div>
         <div id="author"><{this.state.author}</div>
-        // <div id="branch">{this.state.branch}</div>
+        <div id="branch">{this.state.branch}</div>
         <div id="date">{this.state.date}</div>
-        //<div id="sha">{this.state.sha}</div>
-        //<div id="link">{this.state.link}</div>
+        <div id="sha">{this.state.sha}</div>
+        <div id="link">{this.state.link}</div>
       </div>
     );
 
