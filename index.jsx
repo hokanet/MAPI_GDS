@@ -29,10 +29,10 @@ class LatestCommitComponent extends React.Component {
           if (json.commit) {
             this.setState({
               author: json.commit.author.login,
-              branch: json.name,
+              //branch: json.name,
               date: json.commit.commit.author.date,
-              sha: json.commit.sha,
-              link: json._links.html
+              //sha: json.commit.sha,
+              //link: json._links.html
             });
           } else {
             this.setState({
