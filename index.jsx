@@ -55,9 +55,9 @@ class LatestCommitComponent extends React.Component {
     ) : (
       <div>
         <p>last committed:</p>
-        <div id="author"><p>by: </p>{this.state.author}</div>
+        <p>by: </p><div id="author">{this.state.author}</div>
         <div id="branch">{this.state.branch}</div>
-        <div id="date"><p>on: </p>{this.state.date}</div>
+        <p>on: </p><div id="date">{this.state.date}</div>
         <div id="sha">{this.state.sha}</div>
         <div id="link">{this.state.link}</div>
       </div>
