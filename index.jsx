@@ -54,12 +54,12 @@ class LatestCommitComponent extends React.Component {
       <div id="error">{this.state.error}</div>
     ) : (
       <div>
-        <p>committed info</p>
-        <div id="author">by   {this.state.author}</div>
-        <div id="branch">branch {this.state.branch}</div>
-        <div id="date">date {this.state.date}</div>
-        //<div id="sha">{this.state.sha}</div>
-        //<div id="link">{this.state.link}</div>
+        <div id="author">by angela</div>
+        <div id="author">by {this.state.author}</div>
+        // <div id="branch">branch {this.state.branch}</div>
+        <div id="date">on {this.state.date}</div>
+        // <div id="sha">{this.state.sha}</div>
+        // <div id="link">{this.state.link}</div>
       </div>
     );
 
