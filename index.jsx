@@ -54,7 +54,7 @@ class LatestCommitComponent extends React.Component {
       <div id="error">{this.state.error}</div>
     ) : (
       <div>
-        <p>@@@committed info@@@</p>
+        <p>committed info</p>
         <div id="author">by   {this.state.author}</div>
         <div id="branch">branch {this.state.branch}</div>
         <div id="date">date {this.state.date}</div>
