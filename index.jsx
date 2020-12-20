@@ -3,6 +3,10 @@
  *
  * Example Github api request:
  * https://api.github.com/repos/ta-dachi/eatsleepcode.tech/branches/master
+ * <div id="author">by {this.state.author}</div>
+ * <div id="branch">branch {this.state.branch}</div>
+ * // <div id="sha">{this.state.sha}</div>
+ * // <div id="link">{this.state.link}</div>
  */
 class LatestCommitComponent extends React.Component {
   constructor(props) {
@@ -55,11 +59,7 @@ class LatestCommitComponent extends React.Component {
     ) : (
       <div>
         <div id="author">by angela</div>
-        <div id="author">by {this.state.author}</div>
-        // <div id="branch">branch {this.state.branch}</div>
         <div id="date">on {this.state.date}</div>
-        // <div id="sha">{this.state.sha}</div>
-        // <div id="link">{this.state.link}</div>
       </div>
     );
 
