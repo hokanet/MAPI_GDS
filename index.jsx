@@ -56,7 +56,7 @@ class LatestCommitComponent extends React.Component {
       <div>
         <div id="author">{this.state.author}</div>
         <div id="branch">{this.state.branch}</div>
-        <div id="date">{this.props}{this.state.date}</div>
+        <div id="date">date {this.state.date}</p></div>
         <div id="sha">{this.state.sha}</div>
         <div id="link">{this.state.link}</div>
       </div>
