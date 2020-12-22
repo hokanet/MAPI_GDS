@@ -81,6 +81,7 @@
               );
             // add the line scale bar 4.3.1+
             map.addControl(new ol.control.ScaleLine({minWidth:100,units:'metric'}));
+            // add the overview map 4.3.1+
             map.addControl(new ol.control.OverviewMap({
                 className: 'ol-overviewmap',
                 collapsed: true,
@@ -90,7 +91,7 @@
                 label: '>>',
                 view: new ol.View({
                     center: ol.proj.fromLonLat([114.206438, 22.344474]),
-                    zoom:11,
+                    zoom:10,
                     minZoom: 10,
                     maxZoom: 20
                   })
